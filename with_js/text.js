@@ -19,7 +19,9 @@ function buttonclick() {
   }
   else if (stage == 1){
     window.bet = Number(document.getElementById("input").value)
-
+    if (window.bet > window.money || window.bet < 0 || isNaN(window.bet)){
+      alert("error, please refresh page")
+    }
     document.getElementById('input').style.display = "none";
     document.getElementById('button2').style.display = "inline";
     document.getElementById('button3').style.display = "inline";
@@ -30,13 +32,6 @@ function buttonclick() {
   else if (stage == 2) {
     var number1 = Math.floor(Math.random() * 3) + 1;
     var number2 = button
-    console.log(number1);
-    console.log(button);
-    console.log(number2);
-    console.log(window.money);
-    console.log(typeof(window.money));
-    console.log(window.bet);
-    console.log(typeof(window.bet));
     if (number1 == number2) {
       document.getElementById('main').innerHTML = "you win";
 
@@ -50,12 +45,15 @@ function buttonclick() {
 
       document.getElementById("money").innerHTML = ("money: "+window.money);
     }
-    console.log(window.money);
-    console.log(typeof(window.money));
 
     document.getElementById('button2').style.display = "none";
     document.getElementById('button3').style.display = "none";
-    document.getElementById('button1').innerHTML = "play again"
+    document.getElementById('button1').innerHTML = "play again";
+
+    if (money == 0) {
+      alert("game over, are you want play again please refresh page")
+
+    }
     stage = 0
   }
 
