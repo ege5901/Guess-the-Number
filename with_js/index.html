@@ -4,44 +4,55 @@
   <head>
     <title>Guess the Number</title>
     <style>
-      body {
+    body {
 
-      }
-      .label {
-        border-radius: 0px 5px 5px 0px;
-        border-left-style: solid ;
-        border-left-color: blue ;
-        border-left-width: 10px ;
-        background-color : lightblue ;
-        width: 100px;
-        padding: 5px;
-        text-transform: capitalize;
-        font-family: "Arial", Helvatica, sans-serif;
-        font-size: 90%;
-      }
-      .button {
-        text-transform: capitalize;
-        background-color: lightblue;
-        margin-top:5px;
-        border-color:blue;
+    }
+    .label {
+      border-radius: 0px 5px 5px 0px;
 
-      }
-      .input{
-        background-color: lightblue;
-        border-style: outset;
-        border-color: blue;
-        border-width: 5px;
-        padding-left: 5px;
-        text-transform: capitalize;
-        width: 105px;
-      }
-      .div1{
-        margin: 10px;
-        border-style: double;
-        border-color: black 99% ;
-        width: 320px ;
+      background: rgb(2,0,36);
+      background : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,113,195,1) 15%, rgba(0,212,255,1) 100%) ;
+      width: 100px;
+      padding-left: 13%;
+      text-transform: capitalize;
+      font-family: "Arial", Helvatica, sans-serif;
+      font-size: 90%;
+    }
+    .div-buttons{
+      padding-left: 15%;
 
-      }
+}
+    .button {
+      text-transform: capitalize;
+      background-color: #00d4ff;
+      margin-top:5px;
+      border-width: 0px 0px 0px 2px;
+      margin-bottom: 5px;
+      border-color: darkblue;
+      border-style: solid;
+
+
+    }
+    .input{
+      background-color: #00000000;
+      border-style: double;
+      border-color: blue;
+      border-width: 0px 0px 0px 5px;
+      padding-left: 5px;
+      text-transform: capitalize;
+      width: 85px;
+      margin-left: 15px ;
+    }
+    .div1{
+      margin: 10px;
+      border-style: double;
+      border-color: black 99% ;
+      width: 320px ;
+      background: rgb(2,0,36);
+      background : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,113,195,1) 15%, rgba(0,212,255,1) 100%) ;
+
+
+    }
     </style>
   </head>
   <body>
@@ -51,11 +62,12 @@
         <br> i will hold a number between 1,2,3 and you try guess it
         <br> if you guess you will win 3 times of your bet </p>
       <input class="input" id="input" type="text" style="display : none" value="input here">
-
+      <div class="div-buttons">
       <button id="button1" class="button" onclick="button = 1; buttonclick(); " >start</button>
       <button id="button2" class="button" onclick="button = 2; buttonclick(); " style= "display : none">2</button>
       <button id="button3" class="button" onclick="button = 3; buttonclick(); " style= "display : none">3</button>
-
+        <br>
+      </div>
 
       <script src="text.js"></script>
     </div>

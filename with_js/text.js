@@ -2,13 +2,13 @@ var stage = 0;
 var money = Number(10);
 var bet
 
-document.getElementById('main').style.width = "300px";
+document.getElementById('main').style.width = "278px";
 
 
 function buttonclick() {
   document.getElementById("money").innerHTML = ("your money: "+window.money);
   if (stage == 0) {
-    document.getElementById("div1").style.width = "120px";
+    document.getElementById("div1").style.width = "115px";
     document.getElementById('main').style.width = "100px";
     document.getElementById('money').style.display = "block";
     document.getElementById('main').style.display = "block";
