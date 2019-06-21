@@ -2,22 +2,27 @@ var stage = 0;
 var money = Number(10);
 var bet
 
+document.getElementById('main').style.width = "300px";
+
+
 function buttonclick() {
   document.getElementById("money").innerHTML = ("your money: "+window.money);
   if (stage == 0) {
-    document.getElementById('money').style.visibility = "visible";
-    document.getElementById('main').style.visibility = "visible";
+    document.getElementById("div1").style.width = "120px";
+    document.getElementById('main').style.width = "100px";
+    document.getElementById('money').style.display = "block";
+    document.getElementById('main').style.display = "block";
     document.getElementById('main').innerHTML= "bet ?";
-    document.getElementById('input').style.visibility = "visible";
+    document.getElementById('input').style.display = "block";
     document.getElementById("button1").innerHTML = "next"
     stage = 1
   }
   else if (stage == 1){
     window.bet = Number(document.getElementById("input").value)
 
-    document.getElementById('input').style.visibility = "hidden";
-    document.getElementById('button2').style.visibility = "visible";
-    document.getElementById('button3').style.visibility = "visible";
+    document.getElementById('input').style.display = "none";
+    document.getElementById('button2').style.display = "inline";
+    document.getElementById('button3').style.display = "inline";
     document.getElementById('button1').innerHTML = "1";
     document.getElementById('main').innerHTML = "guess the number";
     stage = 2
@@ -48,8 +53,8 @@ function buttonclick() {
     console.log(window.money);
     console.log(typeof(window.money));
 
-    document.getElementById('button2').style.visibility = "hidden";
-    document.getElementById('button3').style.visibility = "hidden";
+    document.getElementById('button2').style.display = "none";
+    document.getElementById('button3').style.display = "none";
     document.getElementById('button1').innerHTML = "play again"
     stage = 0
   }
