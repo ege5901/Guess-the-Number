@@ -2,6 +2,7 @@ var express = require('express')
 var app = express()
 var fs = require("fs")
 var path = require('path');
+var port = process.env.PORT || 80
 
 app.use(express.static('public'));
 
@@ -18,5 +19,5 @@ app.get('/', function (req, res) {
   res.send("hello ");
 })
 
-app.listen(80)
+app.listen(port)
 console.log("started");
