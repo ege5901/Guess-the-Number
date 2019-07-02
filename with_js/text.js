@@ -1,11 +1,19 @@
 var stage = 0;
 var money = Number(10);
-var bet
-
+var bet;
+var h = false;
 document.getElementById('main').style.width = "278px";
 
 
 function buttonclick() {
+
+  if (h) {
+    alert("please refresh")
+
+  } else {
+
+
+
   document.getElementById("money").innerHTML = ("your money: "+window.money);
   if (stage == 0) {
     document.getElementById("div1").style.width = "115px";
@@ -21,6 +29,7 @@ function buttonclick() {
     window.bet = Number(document.getElementById("input").value)
     if (window.bet > window.money || window.bet < 0 || isNaN(window.bet)){
       alert("error, please refresh page")
+      h = true;
     }
     document.getElementById('input').style.display = "none";
     document.getElementById('button2').style.display = "inline";
@@ -51,10 +60,11 @@ function buttonclick() {
     document.getElementById('button1').innerHTML = "play again";
 
     if (money == 0) {
-      alert("game over, are you want play again please refresh page")
-
+      alert("game over, are you want play again please refresh page");
+      h = true;
     }
-    stage = 0
+    stage = 0;
   }
+}
 
 }
