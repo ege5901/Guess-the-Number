@@ -13,7 +13,7 @@ fs.readFile('index.html', function(err, data) {
 
 
 app.get('/GuessTheNumber', function (req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.sendFile(path.join(__dirname + '/only one html/GuessTheNumber.html'));
 })
 app.get('/', function (req, res) {
   res.send("hello ");
