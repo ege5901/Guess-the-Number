@@ -3,6 +3,7 @@ var money = Number(10);
 var bet;
 var gameover = false;
 document.getElementById('main').style.width = "278px";
+var socket = io("localhost:80")
 
  
 function buttonclick() {
