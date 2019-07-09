@@ -1,13 +1,13 @@
 var stage = 0;
 var money = Number(10);
 var bet;
-var h = false;
+var gameover = false;
 document.getElementById('main').style.width = "278px";
 
-
+ 
 function buttonclick() {
 
-  if (h) {
+  if (gameover) {
     alert("please refresh")
 
   } else {
@@ -28,15 +28,18 @@ function buttonclick() {
   else if (stage == 1){
     window.bet = Number(document.getElementById("input").value)
     if (window.bet > window.money || window.bet < 0 || isNaN(window.bet)){
-      alert("error, please refresh page")
-      h = true;
+      alert("your bet must be positive number and be below/equal to your money")
+      
+      stage = 0;
     }
+    else{
     document.getElementById('input').style.display = "none";
     document.getElementById('button2').style.display = "inline";
     document.getElementById('button3').style.display = "inline";
     document.getElementById('button1').innerHTML = "1";
     document.getElementById('main').innerHTML = "guess the number";
     stage = 2
+    }
   }
   else if (stage == 2) {
     var number1 = Math.floor(Math.random() * 3) + 1;
@@ -61,7 +64,7 @@ function buttonclick() {
 
     if (money == 0) {
       alert("game over, are you want play again please refresh page");
-      h = true;
+      gameover = true;
     }
     stage = 0;
   }
