@@ -6,6 +6,8 @@ var fs = require("fs")
 var path = require('path');
 var port = process.env.PORT || 80
 
+
+
 app.use(express.static('public'));
 
 io.on('connection', function(socket){
@@ -13,7 +15,13 @@ io.on('connection', function(socket){
 
   socket.on("data1",function(data){
     console.log(data);
-
+    score = data;
+     
+    fs.appendFile('scores.txt', score, function (err) {
+      if (err) throw err;
+      console.log('Saved!');
+    });
+    
   });
 });
 

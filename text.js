@@ -96,7 +96,7 @@ function buttonclick() {
   }
   else if (stage == "submit"){
     window.name = document.getElementById('input').value;
-    socket.emit("data1",([window.name , window.bestscore]));
+    socket.emit("data1",(window.name+":"+window.bestscore+","));
     alert("submitted");
     stage = 0;
 
