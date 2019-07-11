@@ -1,0 +1,101 @@
+[33mcommit 6ab6729effaa48ac340efb789b292173020e3f5a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Wed Jul 10 23:59:40 2019 +0300
+
+    heroku debuging
+
+[33mcommit 1cd974afb7ee51138e5d835d08a688f92b8c434e[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Wed Jul 10 20:27:07 2019 +0300
+
+    a heroku bug trying to debug
+
+[33mcommit 224bc4096afdcb3cfde23feb6179b02d4d0fbe6e[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Wed Jul 10 20:20:52 2019 +0300
+
+    submit system added to frontend
+
+[33mcommit 5af34603356760c110ae75f19dbf242e16461d47[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Wed Jul 10 02:54:09 2019 +0300
+
+    socket io added and connected but leaderboard not added
+
+[33mcommit 6478cd52dfce72e8052416ecc4c2bcf3614280fa[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Wed Jul 10 00:18:28 2019 +0300
+
+    bug fix and centering
+
+[33mcommit 335de788c27015c7e372120bda88e17948586e64[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Tue Jul 2 16:30:58 2019 +0300
+
+    a bug fixed again
+
+[33mcommit fd351ba721405753f5150fd2ad7c18efbf9da59b[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Tue Jul 2 16:27:02 2019 +0300
+
+    a bug fixed
+
+[33mcommit 24826915ef9e7b6ad1240ca60261ca2498006c0c[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Tue Jul 2 16:22:27 2019 +0300
+
+    gitignore added
+
+[33mcommit 2367c200c7372cf83bbd26273435ff5777c29d65[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Tue Jul 2 16:12:41 2019 +0300
+
+    bugs fixed
+
+[33mcommit e0b57f9000e6a3bca6b07387b533a43b49830731[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Thu Jun 27 02:04:34 2019 +0300
+
+    add procfile
+
+[33mcommit b17e9acd8758fce4e41b82cd9e807349deddf4aa[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Thu Jun 27 00:05:06 2019 +0300
+
+    node js kullanan server oluşturuldu
+
+[33mcommit 4699aa97e9993225228da229b43b95fb73149e1e[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Sat Jun 22 01:02:14 2019 +0300
+
+    css yenilendi
+
+[33mcommit f1c5d5876fac77b05a5aa8d9bbc90c137b2fb6fe[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Fri Jun 21 03:58:18 2019 +0300
+
+    everything is in one html file
+
+[33mcommit 78b3c9a7d86afc817b27d6bef96ec4958aefc8e4[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Fri Jun 21 03:51:32 2019 +0300
+
+    buglar çözüldü
+
+[33mcommit 63dd04926a105d504cfeeccd8f3b9afddb6ebeb6[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Fri Jun 21 03:38:21 2019 +0300
+
+    css html'ye gömülü olarak eklendi debug yapılmadı
+
+[33mcommit 0283ee2a847d17a45a08f656d43f3648ad5c91e1[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Fri Jun 21 01:55:16 2019 +0300
+
+    html oluşturuldu js eklendi css eklenecek bugs cozulecek
+
+[33mcommit 96f176e7e7baa5532ebfeab1778da8828f21b343[m
+Author: Egemen Özdilek <egeoozdilek@gmail.com>
+Date:   Mon Jun 17 23:12:11 2019 +0300
+
+    with py

@@ -4,7 +4,8 @@ var bet = 0;
 var gameover = false;
 var bestscore = 10;
 document.getElementById('main').style.width = "278px";
-var socket = io("localhost:80");
+//var socket = io("localhost:80");
+var socket = io();
 var name ="";
 
  
