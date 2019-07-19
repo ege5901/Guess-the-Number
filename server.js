@@ -28,7 +28,7 @@ io.on('connection', function(socket){
 fs.readFile('index.html', function(err, data) {
     html = data
 
-  });
+});
 
 
 
@@ -41,12 +41,12 @@ app.get('/text.js', function (req, res) {
 
 app.get('/GuessTheNumber', function (req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
-
-  
-
 })
 app.get('/', function (req, res) {
   res.send("hello ");
+})
+app.get('/scores', function (req, res) {
+  res.sendFile(path.join(__dirname + '/scores.txt'));
 })
 
 http.listen(port)
